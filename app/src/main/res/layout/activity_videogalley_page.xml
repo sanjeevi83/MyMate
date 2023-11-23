@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    tools:context=".VideogalleyPage">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <Button
+            android:id="@+id/btnVideo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickChooseVideo"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toTopOf="@id/video_viewer"
+            android:text="Choose Video"
+            tools:ignore="MissingConstraints" />
+
+        <VideoView
+            android:id="@+id/video_viewer"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_height="232dp"
+            android:layout_below="@id/scroll1"
+            android:layout_marginTop="16dp" />
+
+
+
+            <ScrollView
+                android:id="@+id/scroll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                <ListView
+                    android:id="@+id/video_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="401dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/back1"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottmAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:ignore="BottomAppBar"
+        android:background="@color/black">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_nav"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            app:menu="@menu/bottom_menu"
+            android:background="@drawable/transparent_background"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

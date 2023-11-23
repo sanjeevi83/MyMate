@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="raw_video_files">
+        <item>video1</item>
+        <item>video2</item>
+        <item>video3</item>
+        <!-- Add more video file names here -->
+    </string-array>
+</resources>

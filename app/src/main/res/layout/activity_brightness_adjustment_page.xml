@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    tools:context=".BrightnessAdjustmentPage">
+
+    <TextView
+        android:id="@+id/brighttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brightness"
+        app:layout_constraintBottom_toTopOf="@+id/brightnessSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="300sp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/brightnessSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="125"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/brighttext"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottmAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:ignore="BottomAppBar"
+        android:background="@color/black">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_nav"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            app:menu="@menu/bottom_menu"
+            android:background="@drawable/transparent_background"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

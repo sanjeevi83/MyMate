@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/location"
+        android:icon="@drawable/ic_location"
+        android:title="Location" />
+
+    <item
+        android:title=""/>
+
+    <item
+        android:id="@+id/brightness"
+        android:icon="@drawable/ic_brightness"
+        android:title="Brightness" />
+
+    <item
+        android:id="@+id/video"
+        android:icon="@drawable/ic_video"
+        android:title="Videofile" />
+
+</menu>

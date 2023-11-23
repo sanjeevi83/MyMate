@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyMate App</string>
+    <string name="title_activity_location_page">LocationPage</string>
+    <string name="title_activity_maps_page">MapsActivityPage</string>
+</resources>
